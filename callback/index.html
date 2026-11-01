@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tesla authorization code</title></head><body style="font-family:sans-serif;text-align:center;margin-top:3em">
+<h1>Authorization code</h1><textarea id="c" readonly style="font-size:2em;width:90%;height:6em" onclick="this.select()"></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('c').value)">Copy</button></p>
+<p>Copy this code and paste it back to Tessie.</p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||'(no code in URL)';</script></body></html>
